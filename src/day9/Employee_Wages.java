@@ -11,7 +11,6 @@ public class Employee_Wages {
         Google g=new Google();
         Tata t=new Tata();
 
-
         Random ran = new Random();
         int empCheck = ran.nextInt(3);
         g.getEmployeeWages(empCheck);
@@ -33,8 +32,6 @@ class Google {
         int dailyWage=0;
         String companyName ="Google";
 
-
-
         switch (empCheck){
             case 0:
                 System.out.println(companyName+" Employee is Absent");
@@ -56,7 +53,6 @@ class Google {
                 System.out.println("Employee Month Wage is " + monthWage);
 
                 break;
-
         }
     }
 
@@ -73,8 +69,6 @@ class Google {
         int dailyWage=0;
         String companyName ="Tata";
 
-
-
         switch (empCheck){
             case 0:
                 System.out.println(companyName+" Employee is Absent");
@@ -96,7 +90,6 @@ class Google {
                 System.out.println("Employee Month Wage is " + monthWage);
 
                 break;
-
         }
     }
 

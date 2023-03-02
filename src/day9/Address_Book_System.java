@@ -8,10 +8,10 @@ import java.util.Scanner;
 public class Address_Book_System {
     public static void main(String[] args) {
         System.out.println("---   Welcome to Address Book   ---");
-        System.out.println("      Enter Number 1(add) , 2(edit)      ");
+        System.out.println("      Enter Number 1(add) , 2(Exit)      ");
 
         Scanner input = new Scanner(System.in);
-        int getAnswer=10;
+        int getAnswer;
 
         int exit=0;
 do {
@@ -53,8 +53,6 @@ do {
         Contact contact=new Contact(name,lastN,city,number,email);
         addressBook.addContact(contact);
         System.out.println("Contact Added Successfully...");
-
-
     }
     }
 
@@ -85,7 +83,6 @@ class Contact {
         this.city=city;
         this.number=number;
         this.email=email;
-
     }
 
     public String getName(){
