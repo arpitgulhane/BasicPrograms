@@ -14,7 +14,8 @@ public class TypeConversion_Promotion {
         int a=165;
         byte b=45;
 
-        b=(byte) a;  //conversion / casting/ promotion
+//        a=b;   Impleset conversion
+        b=(byte) a;  //conversion / casting Explicet
         System.out.println(b);
 
         a=b;

@@ -44,10 +44,10 @@ do {
         System.out.println("Enter City Name :");
         String city=sc.nextLine();
 
-        System.out.println("Enter Number Name :");
+        System.out.println("Enter Number  :");
         String number=sc.nextLine();
 
-        System.out.println("Enter Email Name :");
+        System.out.println("Enter Email  :");
         String email=sc.nextLine();
 
         Contact contact=new Contact(name,lastN,city,number,email);
@@ -62,6 +62,7 @@ class AddressBook{
         contacts =new ArrayList();
     }
     public void addContact(Contact contact){
+
         contacts.add(contact);
     }
     public List<Contact>getContacts(){
@@ -77,7 +78,6 @@ class Contact {
     private String email;
 
     public Contact(String name,String lasttN,String city,String number,String email){
-
         this.name=name;
         this.lasttN=lasttN;
         this.city=city;

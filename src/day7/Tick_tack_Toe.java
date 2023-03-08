@@ -1,11 +1,7 @@
 package day7;
 import java.util.*;
-//public class Tick_tack_Toe {
-    // A simple program to demonstrate
-// Tic-Tac-Toe Game.
+ public class Tick_tack_Toe {
 
-
-    public class Tick_tack_Toe {
 
         static String[] board;
         static String turn;
@@ -144,8 +140,7 @@ import java.util.*;
 
                 // This game has two player x and O.
                 // Here is the logic to decide the turn.
-                if (board[numInput - 1].equals(
-                        String.valueOf(numInput))) {
+                if (board[numInput - 1].equals(String.valueOf(numInput))) {
                     board[numInput - 1] = turn;
 
                     if (turn.equals("X")) {
@@ -181,4 +176,4 @@ import java.util.*;
         }
     }
 
-//}
+

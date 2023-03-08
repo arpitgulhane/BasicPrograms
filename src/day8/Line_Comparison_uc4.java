@@ -28,7 +28,6 @@ public class Line_Comparison_uc4 {
         }else {
             System.out.println("length 1 is greater than length 2");
         }
-
     }
 
 }
