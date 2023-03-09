@@ -1,8 +1,7 @@
 package day14;
 
-import z_daily_program.LinkListNode;
+public class LinkedList_myLogic {
 
-public class LinkedListNode {
     class Node{
         int data;
         Node next;
@@ -16,7 +15,6 @@ public class LinkedListNode {
     public Node head =null;
     public Node tail =null;
 
-    //----------------ADD Node--------------------------------------------
     public void addNode(int data){
         Node newNode = new Node(data);
 
@@ -29,25 +27,7 @@ public class LinkedListNode {
             tail=newNode;
         }
     }
-    //----------------ADD Last--------------------------------------------
-    public void addLast(Object data) {
 
-        Node newNode = new Node((Integer) data);
-        if(head==null){
-            System.out.println("Linked list is empty...");
-            return;
-        }
-
-        Node tempNode = head;
-
-        while(tempNode.next != null){
-            tempNode = tempNode.next;
-        }
-        tempNode.next=newNode;
-
-    }
-
-    //------------count Nodes---------------------------
     public int countNodes(){
         int count =0;
         Node current = head;
@@ -59,13 +39,14 @@ public class LinkedListNode {
         return count;
     }
 
-    //------------Display Nodes---------------------------
     public void display(){
         Node current = head;
         if(head == null){
             System.out.println("List is Empty");
             return;
         }
+
+//        System.out.println("Nodes of singly linked list:");
         while(current != null){
             System.out.println(current.data+" ");
             current = current.next;
@@ -73,7 +54,6 @@ public class LinkedListNode {
         System.out.println();
     }
 
-    //------------Remove Last Nodes---------------------------
     public void removeLast(){
         Node current = head;
         if(head == null){
@@ -90,8 +70,6 @@ public class LinkedListNode {
         current.next=null;
 //        System.out.println("Last Element"+current.data+" ");
     }
-
-    //------------Remove First Nodes---------------------------
     public void removeFirst(){
         if(head==null){
             System.out.println("Linked list is empty...");
@@ -101,9 +79,8 @@ public class LinkedListNode {
 
     }
 
-
     public static void main(String []args){
-            LinkedListNode sList = new LinkedListNode();
+        LinkedList_myLogic sList = new LinkedList_myLogic();
         sList.addNode(1);
         sList.addNode(2);
         sList.addNode(3);
@@ -116,8 +93,6 @@ public class LinkedListNode {
         sList.display();
         sList.removeFirst();
         System.out.println("After Remove first");
-        sList.display();
-        sList.addLast(100);
         sList.display();
 
 
