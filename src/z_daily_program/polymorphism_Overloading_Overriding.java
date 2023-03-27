@@ -11,9 +11,7 @@ class Over_loading{
     void add(double a, double b, double d){
         System.out.println(a+b+d);
     }
-
 }
-
 public class polymorphism_Overloading_Overriding {
     public static void main(String[] args) {
 
@@ -28,8 +26,6 @@ public class polymorphism_Overloading_Overriding {
 
     }
 }
-
-
 class Animal{
 
     public void make_sound(){

@@ -2,7 +2,6 @@ package day11_12;
 import java.util.Random;
 public class DeckOfCard {
 //            import java.util.*;
-
                 public static void main(String[] args) {
                     String []suits = {"Clubs", "Diamonds", "Hearts", "Spades"};
                     String []rank={"2","3","4","5","6","7","8","9","Jack","Queen","King","Ace"};
@@ -15,7 +14,7 @@ public class DeckOfCard {
                             deck[suits.length * i + j] = rank[i] + " of " + suits[j];
                         }
                     }
-
+                    // shuffle cards
                     Random random=new Random();
                     for(int i=deckOfCard-1;i>0;i--){
                         int j = random.nextInt(i+1);
@@ -23,7 +22,7 @@ public class DeckOfCard {
                         deck[i] = deck[j];
                         deck[j] = temp;
                     }
-
+                    // asign value to each player
                     String [][]players =new String[4][9];
                     int index=0;
                     for(int i=0;i<4;i++){
@@ -31,7 +30,7 @@ public class DeckOfCard {
                             players[i][j]=deck[index++];
                         }
                     }
-
+                    // print players
                     for (int i=0;i<4;i++){
                         System.out.println("player : "+i);
                         for(int j=0;j<9;j++){
@@ -39,9 +38,5 @@ public class DeckOfCard {
                         }
                         System.out.println();
                     }
-
-
                 }
-
-
 }

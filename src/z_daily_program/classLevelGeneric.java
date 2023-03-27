@@ -6,8 +6,6 @@ public class classLevelGeneric {
         Integer num=355;
         gen.setvalue(num);
         gen.getValue();
-
-
     }
 }
 

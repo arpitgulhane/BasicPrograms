@@ -8,12 +8,9 @@ public class Stack {
     public void push(Object data) {
         list.addLast(data);
     }
-
-
     public void pop() {
         list.removeLast();
     }
-
     public void display() {
         list.display();
     }
