@@ -9,7 +9,7 @@ public class LargestSmallest {
         int n = arr.length;
 
         int largest = arr[0];
-        int secondlargest = arr[0];
+        int secondLargest = arr[0];
         int smallest = arr[0];
         int secondSmallest = arr[0];
 
@@ -17,10 +17,10 @@ public class LargestSmallest {
             int currentValue = arr[i];
 
             if (currentValue > largest) {
-                secondlargest = largest;
+                secondLargest = largest;
                 largest = currentValue;
-            } else if (currentValue > secondlargest && currentValue != largest) {
-                secondlargest = currentValue;
+            } else if (currentValue > secondLargest && currentValue != largest) {
+                secondLargest = currentValue;
             }
 
             if (currentValue < smallest) {
@@ -30,7 +30,7 @@ public class LargestSmallest {
                 secondSmallest = currentValue;
             }
         }
-        System.out.println("Second Largest :" + secondlargest);
+        System.out.println("Second Largest :" + secondLargest);
         System.out.println("Second Smallest :" + secondSmallest);
 
     }
