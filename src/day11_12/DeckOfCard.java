@@ -4,7 +4,7 @@ public class DeckOfCard {
 //            import java.util.*;
                 public static void main(String[] args) {
                     String []suits = {"Clubs", "Diamonds", "Hearts", "Spades"};
-                    String []rank={"2","3","4","5","6","7","8","9","Jack","Queen","King","Ace"};
+                    String []rank={"2","3","4","5","6","7","8","9","10","Jack","Queen","King","Ace"};
                     int deckOfCard = suits.length*rank.length;
                     String deck[] = new String[deckOfCard];
 
